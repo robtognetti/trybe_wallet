@@ -6,8 +6,8 @@ class Header extends Component {
   render() {
     const { email, expenses } = this.props;
     const total = expenses.map((account) => {
-      const cotacao = Number(account.exchangeRates[account.currency].ask);
-      const valorReal = cotacao * Number(account.value);
+      const cotation = Number(account.exchangeRates[account.currency].ask);
+      const valorReal = cotation * Number(account.value);
       return Number(valorReal);
     });
     const valorTotal = total.reduce((sum, i) => sum + i, 0);
