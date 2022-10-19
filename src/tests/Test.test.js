@@ -5,6 +5,7 @@ import { renderWithRouterAndRedux } from './helpers/renderWith';
 import App from '../App';
 import Wallet from '../pages/Wallet';
 
+// Ajuda do Lucca para finalizar a parte final do teste
 describe('tests', () => {
   test('Texto moeda brl', () => {
     renderWithRouterAndRedux(<App />, { initialEntries: ['/carteira'] });

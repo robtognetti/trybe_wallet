@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getCurrencies, getSubmit } from '../redux/actions';
 
+// Ajuda do Queonias para realizar o requisito junto com a mentoria da Summer Hellen
 class WalletForm extends Component {
   state = {
     id: 0,
@@ -39,6 +40,7 @@ class WalletForm extends Component {
     dispatch(getSubmit({ value, description, currency, method, tag, id }));
   };
 
+  // Ajuda do Queonias para realizar o requisito junto com a mentoria da Summer Hellen
   render() {
     const { coins } = this.props;
     const { value, description, currency, method, tag } = this.state;

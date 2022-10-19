@@ -3,7 +3,7 @@ export const SAVE_EMAIL = 'SAVE_EMAIL';
 export const GET_CURRENCIES = 'GET_CURRENCIES';
 export const GET_SUBMIT = 'GET_SUBMIT';
 export const RMV_EXPENSES = 'RMV_EXPENSES';
-
+// Ajuda do Queonias e do Lucca para realizar o requisito
 export const responseAPI = (payload) => ({ type: GET_CURRENCIES, payload });
 export const saveEmail = (payload) => ({ type: SAVE_EMAIL, payload });
 export const apiTotal = (payload, obj) => ({ type: GET_SUBMIT, payload, obj });

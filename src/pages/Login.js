@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { saveEmail } from '../redux/actions';
 
+// Ajuda do Queonias para realizar o requisito junto com a mentoria da Summer Hellen
 class Login extends React.Component {
   state = {
     email: '',

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { deleteExpense } from '../redux/actions';
 
+// Ajuda do Lucca para realizar o requisito junto com a mentoria da Summer Hellen
 class Table extends Component {
   deleteButton = (id) => {
     const { expenses, dispatch } = this.props;
@@ -12,6 +13,7 @@ class Table extends Component {
     dispatch(deleteExpense(currentExpense));
   };
 
+  // Ajuda do Lucca para realizar o requisito junto com a mentoria da Summer Hellen
   render() {
     const { expenses } = this.props;
     return (

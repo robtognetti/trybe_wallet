@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+// Ajuda do Queonias para realizar o requisito junto com a mentoria da Summer Hellen
 class Header extends Component {
   valorTotal = () => {
     const { expenses } = this.props;
@@ -16,14 +17,9 @@ class Header extends Component {
     return '0.00';
   };
 
+  // Ajuda do Queonias para realizar o requisito junto com a mentoria da Summer Hellen
   render() {
     const { email } = this.props;
-    // const total = expenses.map((account) => {
-    //   const cotation = Number(account.exchangeRates[account.currency].ask);
-    //   const valorReal = cotation * Number(account.value);
-    //   return Number(valorReal);
-    // });
-    // const valorTotal = total.reduce((sum, i) => sum + i, 0);
 
     return (
       <header>
