@@ -3,6 +3,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { renderWithRouterAndRedux } from './helpers/renderWith';
 import App from '../App';
+import Wallet from '../pages/Wallet';
 
 describe('tests', () => {
   test('Texto moeda brl', () => {
@@ -66,8 +67,7 @@ describe('tests', () => {
   });
 
   test('Editando todas as despesas', async () => {
-    const { history } = renderWithRouterAndRedux(<App />, { initialEntries: ['/carteira'] });
-    const { location: { pathname } } = history;
+    renderWithRouterAndRedux(<Wallet />);
 
     const buttonadd = screen.getByRole('button', {
       name: /adicionar despesa/i,
